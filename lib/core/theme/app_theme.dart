@@ -28,14 +28,14 @@ class AppGradients extends ThemeExtension<AppGradients> {
   @override
   AppGradients lerp(ThemeExtension<AppGradients>? other, double t) {
     if (other is! AppGradients) return this;
-    // Gradients don't lerp well by default; keep the current for simplicity.
+
     return this;
   }
 }
 
 class AppTheme {
   // Brand colors
-  static const _deepBlack = Color(0xFF0F0F0F);
+  static const _deepBlack = Color(0xFF0d0a1c);
   static const _softBlack = Color(0xFF1A1A1A);
   static const _darkGray = Color(0xFF2A2D31);
   static const _mediumGray = Color(0xFF36393F);
@@ -49,9 +49,7 @@ class AppTheme {
   static const _mutedGray = Color(0xFF72767D);
 
   static const _errorRed = Color(0xFFED4245);
-  static const _warningYellow = Color(
-    0xFFFEE75C,
-  ); // via extension or custom usage
+  static const _warningYellow = Color(0xFFFEE75C);
 
   static ColorScheme _darkColorScheme() {
     return const ColorScheme(
@@ -89,7 +87,7 @@ class AppTheme {
   static final dark = ThemeData(
     useMaterial3: true,
     colorScheme: _darkColorScheme(),
-    scaffoldBackgroundColor: _deepBlack, // ensures Scaffold uses your canvas
+    scaffoldBackgroundColor: _deepBlack,
     appBarTheme: const AppBarTheme(
       backgroundColor: _deepBlack,
       foregroundColor: _white,

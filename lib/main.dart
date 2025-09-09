@@ -1,5 +1,7 @@
+import 'package:chunkit/app_wrapper.dart';
 import 'package:chunkit/features/video/presentation/pages/home.dart';
 import 'package:flutter/material.dart';
+import 'core/theme/app_theme.dart';
 
 void main() => runApp(const MyApp());
 
@@ -10,19 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Chunkit',
-      theme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-      ),
-      darkTheme: ThemeData(
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.teal,
-          brightness: Brightness.dark,
-        ),
-      ),
-      themeMode: ThemeMode.system,
-      home: const Home(),
+      darkTheme: AppTheme.dark,
+      themeMode: ThemeMode.dark,
+      home: const AppWrapper(),
     );
   }
 }
