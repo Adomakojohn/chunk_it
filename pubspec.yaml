@@ -41,6 +41,34 @@ dependencies:
   supabase_flutter: ^2.10.0
   firebase_auth: ^6.0.2
   equatable: ^2.0.7
+  shared_preferences: ^2.5.3
+  # VIDEO PROCESSING
+  youtube_explode_dart: ^2.2.1    # Extract YouTube video info & streams
+  ffmpeg_kit_flutter: ^6.0.3      # Video processing & chunking
+  
+  # BETTER NETWORKING
+  dio: ^5.7.0                     # Replace http - better features
+  dartz: ^0.10.1                  # Functional programming (Either type)
+  
+  # DEPENDENCY INJECTION ENHANCEMENT
+  injectable: ^2.5.0              # Code generation for get_it
+  
+  # JSON & SERIALIZATION
+  json_annotation: ^4.9.0         # JSON serialization annotations
+  
+  # UI ENHANCEMENTS
+  cached_network_image: ^3.4.1    # Cached images for video thumbnails
+  
+  # FILE SYSTEM
+  path_provider: ^2.1.4           # Get device directories
+  
+  # PERMISSIONS
+  permission_handler: ^11.3.1     # Storage permissions for saving chunks
+  flutter_dotenv: ^6.0.0
+  connectivity_plus: ^7.0.0
+
+
+
 
 dev_dependencies:
   flutter_test:
@@ -52,6 +80,13 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+    # CODE GENERATION
+  build_runner: ^2.4.13           # Runs code generators
+  injectable_generator: ^2.6.2    # Generates dependency injection code
+  json_serializable: ^6.8.0       # Generates JSON serialization code
+  
+  # TESTING
+  mockito: ^5.4.4                 # Mock objects for testing
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -65,8 +100,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/icons/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

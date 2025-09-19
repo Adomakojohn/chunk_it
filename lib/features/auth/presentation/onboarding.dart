@@ -1,0 +1,26 @@
+import 'package:chunkit/core/theme/app_theme.dart';
+import 'package:flutter/material.dart';
+
+class Onboarding extends StatefulWidget {
+  const Onboarding({super.key});
+
+  @override
+  State<Onboarding> createState() => _OnboardingState();
+}
+
+class _OnboardingState extends State<Onboarding> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          Container(
+            height: 400,
+            width: 400,
+            color: AppTheme.dark.colorScheme.primary,
+          ),
+        ],
+      ),
+    );
+  }
+}

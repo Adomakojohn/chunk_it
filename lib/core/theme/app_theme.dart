@@ -60,13 +60,10 @@ class AppTheme {
       onSecondary: _deepBlack,
       tertiary: _tertiaryBlue,
       onTertiary: _white,
-
-      background: _deepBlack,
-      onBackground: _white,
       surface: _darkGray,
       onSurface: _white,
 
-      surfaceVariant: _mediumGray,
+      surfaceContainerHighest: _mediumGray,
       onSurfaceVariant: _lightGray,
 
       error: _errorRed,
