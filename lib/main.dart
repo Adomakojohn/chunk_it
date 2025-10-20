@@ -1,5 +1,4 @@
 import 'package:chunkit/app_wrapper.dart';
-import 'package:chunkit/features/auth/presentation/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
 

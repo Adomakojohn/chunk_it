@@ -7,7 +7,7 @@ import Foundation
 
 import app_links
 import connectivity_plus
-import ffmpeg_kit_flutter
+import ffmpeg_kit_flutter_new
 import firebase_auth
 import firebase_core
 import path_provider_foundation

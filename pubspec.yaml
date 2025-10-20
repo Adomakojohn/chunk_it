@@ -44,7 +44,7 @@ dependencies:
   shared_preferences: ^2.5.3
   # VIDEO PROCESSING
   youtube_explode_dart: ^2.2.1    # Extract YouTube video info & streams
-  ffmpeg_kit_flutter: ^6.0.3      # Video processing & chunking
+  
   
   # BETTER NETWORKING
   dio: ^5.7.0                     # Replace http - better features
@@ -66,6 +66,7 @@ dependencies:
   permission_handler: ^11.3.1     # Storage permissions for saving chunks
   flutter_dotenv: ^6.0.0
   connectivity_plus: ^7.0.0
+  ffmpeg_kit_flutter_new: 3.2.0
 
 
 

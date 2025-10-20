@@ -60,7 +60,7 @@ class AppTheme {
       onSecondary: _deepBlack,
       tertiary: _tertiaryBlue,
       onTertiary: _white,
-      surface: _darkGray,
+      surface: _softBlack,
       onSurface: _white,
 
       surfaceContainerHighest: _mediumGray,
@@ -91,7 +91,7 @@ class AppTheme {
       elevation: 0,
       centerTitle: false,
     ),
-    cardColor: _darkGray,
+    cardColor: _softBlack,
     dividerColor: _mutedGray,
     textTheme: Typography.whiteMountainView.apply(
       bodyColor: _white,
@@ -110,7 +110,7 @@ class AppTheme {
           end: Alignment.centerRight,
         ),
         shimmer: const LinearGradient(
-          colors: [_darkGray, _mediumGray],
+          colors: [_softBlack, _darkGray],
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
         ),
